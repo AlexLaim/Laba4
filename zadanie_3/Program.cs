@@ -16,12 +16,12 @@ namespace zadanie_3
             string str3 = str;
             Console.WriteLine($"Ваш текст: {str}");
             Console.WriteLine(g);
-            string [] mas = str.Split(new char[] { ' ' });
+            string[] mas = str.Split(new char[] { ' ' });
             string a = string.Empty;
             Console.WriteLine("При помощи строки:");
             for (int i = mas.Length - 1; i >= 0; i--)
             {
-                a += mas[i] + " "; 
+                a += mas[i] + " ";
             }
             Console.Write(a);
             Console.WriteLine();
@@ -33,18 +33,21 @@ namespace zadanie_3
                 sb.Append(str2[i]);
                 Console.Write(str2[i] + " ");
             }
-
             Console.WriteLine();
             Console.WriteLine(g);
             Console.WriteLine("При помощи массива:");
             string[] st = str3.Split(new char[] { ' ' });
             Array.Reverse(st);
             for (int i = 0; i < st.Length; i++)
-            {
-                if (i == st.Length - 1)
-                    Console.Write(st[i]);
-                else
-                    Console.Write(st[i] + ' ');
+            { 
+                   if (i == st.Length - 1)
+                   {
+                       Console.Write(st[i]);
+                   }
+                   else
+                   {
+                       Console.Write(st[i] + ' ');
+                   }    
             }
         }
     }
